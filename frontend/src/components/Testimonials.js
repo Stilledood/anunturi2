@@ -46,7 +46,7 @@ export default function TestimonialsCarousel() {
         {/* Buton stânga */}
         <button
           onClick={prevSlide}
-          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-red-500 hover:bg-red-600 rounded-full p-2 shadow-lg z-10"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-[#854d82] hover:bg-[#70376d] rounded-full p-2 shadow-lg z-10"
         >
           <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -78,7 +78,7 @@ export default function TestimonialsCarousel() {
         {/* Buton dreapta */}
         <button
           onClick={nextSlide}
-          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-red-500 hover:bg-red-600 rounded-full p-2 shadow-lg z-10"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-[#854d82] hover:bg-[#70376d] rounded-full p-2 shadow-lg z-10"
         >
           <svg className="h-6 w-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

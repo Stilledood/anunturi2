@@ -59,6 +59,7 @@ export default function FurnizoriPage() {
     { title: 'Formația EchoVibes', image: '/images/dj.jpg', category: 'DJ' },
     { title: 'Salon DreamCatcher', image: '/images/foto.jpg', category: 'Fotograf' },
     { title: 'DJ AudioRush', image: '/images/formatie.jpg', category: 'Formație' },
+    // ... restul furnizorilor
   ];
 
   const [filter, setFilter] = useState('Toate');
@@ -87,7 +88,7 @@ export default function FurnizoriPage() {
                 onClick={() => setFilter(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium border transition ${
                   filter === cat
-                    ? 'bg-[#FA3E3E] text-white border-[#FA3E3E]'
+                    ? 'bg-[#854d82] text-white border-[#854d82]'
                     : 'text-gray-600 border-gray-300 hover:bg-gray-100'
                 }`}
               >
@@ -101,7 +102,7 @@ export default function FurnizoriPage() {
             placeholder="Caută furnizor..."
             value={search}
             onChange={e => setSearch(e.target.value)}
-            className="border border-gray-300 rounded-full px-4 py-2 w-full max-w-xs text-sm focus:outline-none focus:ring-2 focus:ring-[#FA3E3E]"
+            className="border border-gray-300 rounded-full px-4 py-2 w-full max-w-xs text-sm focus:outline-none focus:ring-2 focus:ring-[#854d82]"
           />
         </div>
 

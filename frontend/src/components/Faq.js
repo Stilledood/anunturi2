@@ -52,7 +52,7 @@ export default function FAQ() {
         {/* Buton Contact */}
         <Link
           href="/contact"
-          className="inline-block bg-red-500 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-red-600 hover:scale-105 transition-all duration-300"
+          className="inline-block bg-[#854d82] text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-[#70376d] hover:scale-105 transition-all duration-300"
         >
           Ai o întrebare? Contactează-ne
         </Link>
@@ -64,18 +64,18 @@ export default function FAQ() {
           <div
             key={idx}
             className={`border border-gray-200 rounded-lg overflow-hidden transition-all duration-300 ${
-              openIndex === idx ? "border-red-500" : ""
+              openIndex === idx ? "border-[#854d82]" : ""
             }`}
           >
             <button
               onClick={() => toggle(idx)}
               className={`w-full flex justify-between items-center px-6 py-4 bg-gray-50 hover:bg-gray-100 transition text-left border-l-4 ${
-                openIndex === idx ? "border-red-500" : "border-transparent"
+                openIndex === idx ? "border-[#854d82]" : "border-transparent"
               }`}
             >
               <span
                 className={`font-medium transition-colors duration-200 ${
-                  openIndex === idx ? "text-red-500" : "text-gray-900"
+                  openIndex === idx ? "text-[#854d82]" : "text-gray-900"
                 }`}
               >
                 {faq.question}
@@ -83,7 +83,7 @@ export default function FAQ() {
 
               <div
                 className={`p-2 rounded-full transition-colors duration-200 ${
-                  openIndex === idx ? "bg-red-500" : ""
+                  openIndex === idx ? "bg-[#854d82]" : ""
                 }`}
               >
                 <svg

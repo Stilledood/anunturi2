@@ -51,7 +51,7 @@ export default function RegisterFurnizor() {
             sau
             <Link
               href="/log-in"
-              className="font-medium text-red-600 hover:text-red-500 ml-1"
+              className="font-medium text-[#854d82] hover:text-[#71396e] ml-1"
             >
               ai deja cont?
             </Link>
@@ -66,7 +66,7 @@ export default function RegisterFurnizor() {
               placeholder="Nume companie"
               value={formData.company}
               onChange={handleChange}
-              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-[#854d82] focus:border-[#854d82]"
             />
             <input
               name="phone"
@@ -75,7 +75,7 @@ export default function RegisterFurnizor() {
               placeholder="Număr de telefon"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-[#854d82] focus:border-[#854d82]"
             />
             <input
               name="email"
@@ -84,7 +84,7 @@ export default function RegisterFurnizor() {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-[#854d82] focus:border-[#854d82]"
             />
             <input
               name="password"
@@ -93,7 +93,7 @@ export default function RegisterFurnizor() {
               placeholder="Parolă"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-[#854d82] focus:border-[#854d82]"
             />
             <input
               name="confirmPassword"
@@ -102,15 +102,15 @@ export default function RegisterFurnizor() {
               placeholder="Confirmă parola"
               value={formData.confirmPassword}
               onChange={handleChange}
-              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-red-500 focus:border-red-500"
+              className="w-full px-3 py-3 border border-gray-300 rounded-md focus:ring-[#854d82] focus:border-[#854d82]"
             />
           </div>
 
-          {error && <p className="text-red-600 text-sm">{error}</p>}
+          {error && <p className="text-[#854d82] text-sm">{error}</p>}
 
           <button
             type="submit"
-            className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md font-medium transition"
+            className="w-full bg-[#854d82] hover:bg-[#71396e] text-white py-3 px-4 rounded-md font-medium transition"
           >
             Creează cont
           </button>

@@ -12,14 +12,14 @@ export default function RegisterPage() {
         <div className="flex flex-col gap-6 mt-8">
           <Link
             href="/register/user"
-            className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md font-medium text-center transition"
+            className="w-full bg-[#854d82] hover:bg-[#71396e] text-white py-3 px-4 rounded-md font-medium text-center transition"
           >
             Cont Utilizator
           </Link>
 
           <Link
             href="/register/furnizor"
-            className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-md font-medium text-center transition"
+            className="w-full bg-[#854d82] hover:bg-[#71396e] text-white py-3 px-4 rounded-md font-medium text-center transition"
           >
             Cont Furnizor
           </Link>

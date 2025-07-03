@@ -22,7 +22,7 @@ export default function Hero() {
 
         <a
           href="/furnizori"
-          className="inline-block bg-[#f97316] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-red-700 hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-400"
+           className="inline-block bg-[#854d82] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#70376d] hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#eddcf4]"
         >
           Explorează anunțurile
         </a>

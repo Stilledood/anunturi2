@@ -35,7 +35,8 @@ export default function ContactPage() {
         {/* FORMULAR */}
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 bg-white shadow-md rounded-lg p-8 border-l-4 border-red-600"
+          className="space-y-6 bg-white shadow-md rounded-lg p-8 border-l-4"
+          style={{ borderColor: "#854d82" }}
         >
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -48,7 +49,7 @@ export default function ContactPage() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-[#854d82] focus:border-[#854d82]"
             />
           </div>
 
@@ -63,7 +64,7 @@ export default function ContactPage() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-[#854d82] focus:border-[#854d82]"
             />
           </div>
 
@@ -77,7 +78,7 @@ export default function ContactPage() {
               value={formData.reason}
               onChange={handleChange}
               required
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-[#854d82] focus:border-[#854d82]"
             >
               <option value="">Selectează un motiv</option>
               <option value="tehnice">Probleme tehnice</option>
@@ -97,13 +98,14 @@ export default function ContactPage() {
               value={formData.message}
               onChange={handleChange}
               required
-              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-red-500 focus:border-red-500"
+              className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-3 focus:ring-[#854d82] focus:border-[#854d82]"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition"
+            className="w-full text-white font-bold py-3 px-6 rounded-lg shadow-md transition"
+            style={{ backgroundColor: "#854d82", boxShadow: "0 2px 6px rgba(133, 77, 130, 0.5)" }}
           >
             Trimite mesajul
           </button>
@@ -114,7 +116,7 @@ export default function ContactPage() {
         </form>
 
         {/* CONTACT + QR */}
-        <div className="bg-white shadow-md rounded-lg p-8 border-l-4 border-red-600 space-y-6">
+        <div className="bg-white shadow-md rounded-lg p-8 border-l-4 space-y-6" style={{ borderColor: "#854d82" }}>
           <div className="space-y-2">
             <h2 className="text-2xl font-semibold text-gray-900">Date de contact</h2>
             <p className="text-base text-gray-700">
@@ -124,28 +126,28 @@ export default function ContactPage() {
 
           <ul className="space-y-2 text-base text-gray-800">
             <li className="flex items-center gap-3">
-              <PhoneIcon className="h-5 w-5 text-red-600" />
+              <PhoneIcon className="h-5 w-5" style={{ color: "#854d82" }} />
               <span>
                 <strong className="text-gray-900">Telefon 1:</strong>{" "}
-                <a href="tel:+40740123456" className="text-red-600 hover:underline">
+                <a href="tel:+40740123456" className="hover:underline" style={{ color: "#854d82" }}>
                   0740 123 456
                 </a>
               </span>
             </li>
             <li className="flex items-center gap-3">
-              <PhoneIcon className="h-5 w-5 text-red-600" />
+              <PhoneIcon className="h-5 w-5" style={{ color: "#854d82" }} />
               <span>
                 <strong className="text-gray-900">Telefon 2:</strong>{" "}
-                <a href="tel:+40788987654" className="text-red-600 hover:underline">
+                <a href="tel:+40788987654" className="hover:underline" style={{ color: "#854d82" }}>
                   0788 987 654
                 </a>
               </span>
             </li>
             <li className="flex items-center gap-3">
-              <EnvelopeIcon className="h-5 w-5 text-red-600" />
+              <EnvelopeIcon className="h-5 w-5" style={{ color: "#854d82" }} />
               <span>
                 <strong className="text-gray-900">Email:</strong>{" "}
-                <a href="mailto:contact@eventra.ro" className="text-red-600 hover:underline">
+                <a href="mailto:contact@eventra.ro" className="hover:underline" style={{ color: "#854d82" }}>
                   contact@eventra.ro
                 </a>
               </span>
@@ -158,7 +160,8 @@ export default function ContactPage() {
               Scanează pentru contact instant
             </h3>
             <div className="flex justify-center">
-              <div className="relative p-2 border-2 border-red-600 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(239,68,68,0.6)] cursor-pointer">
+              <div className="relative p-2 border-2 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
+                   style={{ borderColor: "#854d82", boxShadow: "0 0 20px rgba(133, 77, 130, 0.3)" }}>
                 <img
                   src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/40740123456"
                   alt="WhatsApp QR"

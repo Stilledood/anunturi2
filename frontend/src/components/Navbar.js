@@ -56,7 +56,7 @@ export default function Navbar() {
                 ))}
             </select>
 
-            <button className="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-1 text-sm">
+            <button className="bg-[#854d82] hover:bg-[#70376d] text-white rounded-full px-4 py-1 text-sm">
               Caută
             </button>
           </div>
@@ -90,18 +90,17 @@ export default function Navbar() {
                 </div>
 
                 <div className="flex flex-col gap-3 text-sm">
-                  <Link href="/adauga-anunt" className="hover:text-red-500">Adaugă Anunț</Link>
-                  <Link href="/furnizori" className="hover:text-red-500">Găsește Servicii</Link>
-                  <Link href="/contact" className="hover:text-red-500">Contact</Link>
+                  <Link href="/adauga-anunt" className="hover:text-[#854d82]">Adaugă Anunț</Link>
+                  <Link href="/furnizori" className="hover:text-[#854d82]">Găsește Servicii</Link>
+                  <Link href="/contact" className="hover:text-[#854d82]">Contact</Link>
                   <hr />
-                  <a href="/log-in" className="hover:text-red-500">Log in</a>
+                  <a href="/log-in" className="hover:text-[#854d82]">Log in</a>
                   <a
-  href="/register"
-  className="bg-red-500 hover:bg-red-600 text-white rounded-full px-4 py-2 text-center w-fit"
->
-  Register
-</a>
-
+                    href="/register"
+                    className="bg-[#854d82] hover:bg-[#70376d] text-white rounded-full px-4 py-2 text-center w-fit"
+                  >
+                    Register
+                  </a>
                 </div>
               </div>
             </div>

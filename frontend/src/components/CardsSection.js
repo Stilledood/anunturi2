@@ -68,7 +68,7 @@ export default function CardsSection() {
                 onClick={() => setFilter(cat)}
                 className={`px-4 py-2 rounded-full text-sm font-medium border transition ${
                   filter === cat
-                    ? "bg-[#FA3E3E] text-white border-[#FA3E3E]"
+                    ? "bg-[#854d82] text-white border-[#854d82]"
                     : "text-gray-600 border-gray-300 hover:bg-gray-100"
                 }`}
               >
@@ -93,7 +93,7 @@ export default function CardsSection() {
                   onClick={() => setSelectedProvider({ ...item, rating })}
                 >
                   {item.recommended && (
-                    <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-semibold px-2 py-1 rounded-full z-10 shadow">
+                    <span className="absolute top-2 left-2 bg-[#854d82] text-white text-xs font-semibold px-2 py-1 rounded-full z-10 shadow">
                       Recomandat
                     </span>
                   )}
@@ -152,7 +152,7 @@ export default function CardsSection() {
                 className="bg-white rounded-xl max-w-md w-full p-6 relative shadow-xl"
               >
                 <button
-                  className="absolute top-2 right-3 text-gray-400 hover:text-red-500 text-xl"
+                  className="absolute top-2 right-3 text-gray-400 hover:text-[#854d82] text-xl"
                   onClick={() => setSelectedProvider(null)}
                 >
                   ×
@@ -178,12 +178,12 @@ export default function CardsSection() {
                   {selectedProvider.email ? (
                     <a
                       href={`mailto:${selectedProvider.email}`}
-                      className="block w-full text-center mt-2 bg-[#FA3E3E] text-white py-2 px-4 rounded-md font-medium hover:bg-red-700 transition"
+                      className="block w-full text-center mt-2 bg-[#854d82] text-white py-2 px-4 rounded-md font-medium hover:bg-[#70376d] transition"
                     >
                       Contactează furnizorul
                     </a>
                   ) : (
-                    <p className="text-red-500 text-center">Email indisponibil</p>
+                    <p className="text-[#854d82] text-center">Email indisponibil</p>
                   )}
                 </div>
               </motion.div>

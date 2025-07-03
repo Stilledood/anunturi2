@@ -1,4 +1,3 @@
-// components/PlatformServices.jsx
 "use client";
 
 import {
@@ -56,8 +55,8 @@ export default function PlatformServices() {
             className={`flex ${i % 2 === 0 ? "justify-start" : "justify-end"}`}
           >
             <div className="max-w-sm bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-left">
-              <div className="inline-flex items-center justify-center bg-red-50 rounded-full p-3 mb-5">
-                <Icon className="h-8 w-8 text-red-600" />
+              <div className="inline-flex items-center justify-center bg-[#f4e9f3] rounded-full p-3 mb-5">
+                <Icon className="h-8 w-8 text-[#854d82]" />
               </div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-3 leading-snug">
                 {title}

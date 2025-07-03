@@ -32,7 +32,7 @@ export default function LoginPage() {
             sau{" "}
             <Link
               href="/register"
-              className="font-semibold text-red-600 hover:underline"
+              className="font-semibold text-[#854d82] hover:underline"
             >
               creează un cont nou
             </Link>
@@ -51,7 +51,7 @@ export default function LoginPage() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="pl-10 pr-3 py-3 w-full border border-gray-300 rounded-md text-sm focus:ring-red-500 focus:border-red-500"
+                className="pl-10 pr-3 py-3 w-full border border-gray-300 rounded-md text-sm focus:ring-[#854d82] focus:border-[#854d82]"
                 placeholder="Email"
               />
             </div>
@@ -66,18 +66,18 @@ export default function LoginPage() {
                 value={formData.password}
                 onChange={handleChange}
                 required
-                className="pl-10 pr-3 py-3 w-full border border-gray-300 rounded-md text-sm focus:ring-red-500 focus:border-red-500"
+                className="pl-10 pr-3 py-3 w-full border border-gray-300 rounded-md text-sm focus:ring-[#854d82] focus:border-[#854d82]"
                 placeholder="Parolă"
               />
             </div>
           </div>
 
-          {error && <p className="text-red-600 text-sm">{error}</p>}
+          {error && <p className="text-[#854d82] text-sm">{error}</p>}
 
           <div>
             <button
               type="submit"
-              className="w-full py-3 px-4 text-sm font-semibold rounded-md text-white bg-red-600 hover:bg-red-700 hover:shadow-lg transition-all duration-300"
+              className="w-full py-3 px-4 text-sm font-semibold rounded-md text-white bg-[#854d82] hover:bg-[#71396e] hover:shadow-lg transition-all duration-300"
             >
               Autentificare
             </button>
