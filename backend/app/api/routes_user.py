@@ -102,4 +102,7 @@ async def resend_verification_email(email: str, db: AsyncSession = Depends(get_d
     await send_verification_email(user.email, token)
 
     return {"message": "Email de confirmare retrimis cu succes!"}
+    #Asta e un comment
+
+
 
